@@ -1,0 +1,569 @@
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+
+
+[hidden],
+template {
+  display: none;
+}
+
+
+a {
+  background-color: transparent;
+}
+
+
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+
+b,
+strong {
+  font-weight: bold;
+}
+
+
+
+dfn {
+  font-style: italic;
+}
+
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+
+small {
+  font-size: 80%;
+}
+
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+
+img {
+  border: 0;
+}
+
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+figure {
+  margin: 1em 40px;
+}
+
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+button {
+  overflow: visible;
+}
+
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box; /* 2 */
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+
+textarea {
+  overflow: auto;
+}
+
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+@font-face {
+  font-family: Roboto;
+}
+
+header {
+  display: inline-block;
+  width: 80%;
+  height: 100px;
+  padding: 0 10%;
+}
+h4 {
+  margin: 0;
+  padding-top: 35px;
+  width: 20%;
+  font-family: Roboto;
+  color:  #303030;
+  font-size: 48px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  line-height: 27px;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+.logo {
+  display: inline-block;
+}
+.nav {
+  display: inline-block;
+  line-height: 20px;
+  font-family: lato;
+  font-weight: 700;
+  font-size: 16px;
+  float: right;
+  line-height: 85px;
+  color:  #303030;
+}
+.navbar {
+  display: inline-block;
+  text-align: right;
+  font-family: Roboto;
+  color:  #303030;
+  font-size: 18px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+  margin-left: 40px;
+}
+.fa-bars {
+  text-align: right;
+  margin-left: 35px;
+}
+
+.slider {
+    padding: 0 10%;
+    /* padding-top: 100px; */
+    display: inline-block;
+    margin-top: 100px;
+}
+h1 {
+ font-family: Raleway;
+ color:  #303030;
+ font-size: 150px;/* Приближение из-за подстановки шрифтов */
+ line-height: 150px;/* Приближение из-за подстановки шрифтов */
+ margin: 0 auto;
+ text-align: right;
+}
+.text {
+  display: inline-block;
+  width: 50%;
+}
+.op {
+  /* margin-top: 100px; */
+  font-family: Roboto;
+  color:  #303030;
+  font-size: 24px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 36px;/* Приближение из-за подстановки шрифтов */
+  text-align: right;
+}
+
+aside {
+  display: inline-block;
+}
+.image {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  float: right;
+}
+
+.project {
+  font-family: Roboto;
+color:  #e10011;
+font-size: 24px;/* Приближение из-за подстановки шрифтов */
+font-weight: 700;
+line-height: 36px;/* Приближение из-за подстановки шрифтов */
+text-align: right;
+}
+.select {
+  height: 180px;
+}
+
+.featured {
+    /* padding: 0 10%; */
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    /* padding-top: 100px; */
+    /* display: inline-block; */
+}
+
+h3 {
+  padding-top: 40px;
+  margin: 0 auto;
+  font-family: Raleway;
+  color:  #303030;
+  font-size: 48px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  line-height: 150px;/* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  margin-bottom: -30px;
+}
+.wav {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: -80px;
+}
+
+.star{
+    display: inline-block;
+    padding-left: 10px;
+    color: #9d9d9d;
+    font-size: 24px;
+}
+.wave {
+  letter-spacing: -6px;
+  display: inline-block;
+  color: #9d9d9d;
+  font-size: 24px;
+}
+
+.rev {
+  margin: 0 auto;
+  width: 55%;
+  text-align: center;
+  font-family: Raleway;
+  color:  #303030;
+  font-size: 18px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 24px;/* Приближение из-за подстановки шрифтов */
+}
+.re {
+  margin-top: -15px;
+}
+
+.line-one {
+  padding: 0 15%;
+}
+
+.ra {
+  width: 66%;
+}
+.ri {
+  float: right;
+  width: 31.3%;
+}
+.line-two {
+  padding: 0 15%;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.image.second{
+  width: 31.12%;
+  float: left;
+  border-radius: 12px;
+}
+.image.first {
+  width: 17.5%;
+}
+
+.image.first,.image.second {
+  border:2px solid transparent;
+  margin:0;
+  padding:0;
+
+}
+
+  .image.first {
+  opacity:1px;
+  display:block;
+  /* width: 31.5%; */
+  border-radius: 10px;
+  position:absolute;
+  z-index:100;
+  transition-duration:0.96s;
+  -webkit-transition-duration:0.96s;
+  -moz-transition-duration:0.96s;
+  -o-transition-duration:0.96s;
+  -ms-transition-duration:0.96s;
+}
+
+  .image.first:hover {
+  opacity:0.00;
+}
+
+  div.ImgField {
+  display:inline-block;
+  background-position:center center;
+  background-repeat:no-repeat;
+  margin:0;
+  padding:0;
+}
+.rd {
+  width: 31.3%;
+  padding-left: 2.5%;
+}
+.rf {
+  width: 31.3%;
+  float: right;
+}
+
+.prod {
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+
+.re1 {
+    margin-top: -15px;
+      padding: 0 15%;
+}
+.search {
+  margin: 0 auto;
+  text-align: center;
+}
+.form {
+  height: 62px;
+  border-radius: 40px 0 0 40px;
+  border: none;
+  width: 30%;
+}
+input::-webkit-input-placeholder {
+  font-family: Raleway;
+  color:  #979797;
+  font-size: 18px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 600;
+  font-style: italic;
+  line-height: 24px;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+input {
+  font-family: Raleway;
+  color:  #979797;
+  font-size: 18px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 600;
+  font-style: italic;
+  line-height: 24px;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  padding-left: 60px;
+}
+
+input:active{
+  outline: 0;
+  outline-offset: 0;
+}
+input:focus{
+  outline: 0;
+  outline-offset: 0;
+}
+
+.subscribe {
+  height: 62px;
+  border-radius: 0 40px 40px 0;
+  border: none;
+  background-color: red;
+  font-family: Roboto;
+  color:  #ffffff;
+  font-size: 18px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  width: 15%;
+  text-align: center;
+  margin-left: -3px;
+
+}
+
+.fa-envelope-o {
+  position: absolute;
+  padding-top: 24px;
+  padding-left: 25px;
+  color:  #979797;
+}
+
+.fa-caret-right {
+ position: absolute;
+ color:  white;
+ padding-left: 3px;
+ padding-top: 2px;
+}
+.social {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10%;
+  text-align: center;
+  padding-top: 180px;
+}
+.soc {
+  padding: 10px;
+}
+.cop {
+  font-family: Raleway;
+color:  #979797;
+font-size: 18px;/* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+line-height: 24px;/* Приближение из-за подстановки шрифтов */
+text-align: center;
+}
+
+.comp {
+  color: BLACK;
+}
